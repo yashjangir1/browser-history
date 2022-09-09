@@ -1,0 +1,116 @@
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logo-and-search-bar-container {
+  background-color: #3367d6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  height: 10%;
+}
+
+.app-logo {
+  max-width: 80px;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.search-logo-container {
+  width: 5%;
+  height: 45px;
+  border-top: 0.5px solid #6697ff;
+  border-bottom: 0.5px solid #6697ff;
+  border-left: 0.5px solid #6697ff;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #2850a7;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-logo {
+  width: 25px;
+}
+
+.search-bar {
+  width: 30%;
+  height: 45px;
+  padding: 10px;
+  background-color: #2850a7;
+  border: 0.5px solid #6697ff;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.empty-history-para {
+  font-family: Roboto;
+  font-size: 25px;
+  color: #475569;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.historys-container {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8fafc;
+  flex-grow: 1;
+}
+
+.history-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 2px #64748b;
+  width: 95%;
+  background-color: #ffffff;
+  list-style: none;
+  padding-left: 10px;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.history-item-list {
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .search-bar-container {
+    justify-content: flex-end;
+  }
+
+  .search-logo-container {
+    width: 20%;
+  }
+
+  .search-bar {
+    width: 70%;
+  }
+
+  .history-items-container {
+    width: 100%;
+  }
+}
